@@ -16,7 +16,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>{children}
+
+      <footer className="bg-muted text-muted-foreground py-4 px-6 text-center">
+            <p>&copy; 2024 FIRE Calculator. All rights reserved.</p>
+          </footer>
+      </body>
     </html>
   );
 }
