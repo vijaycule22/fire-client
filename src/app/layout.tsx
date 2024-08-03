@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Navbar from "./navbar/page";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,11 +18,26 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}
+      <body className={inter.className}>
+        <Navbar />
+        {children}
 
-      <footer className="bg-muted text-muted-foreground py-4 px-6 text-center">
+        {/* <footer className="bg-muted text-muted-foreground py-4 px-6 text-center">
             <p>&copy; 2024 FIRE Calculator. All rights reserved.</p>
-          </footer>
+          </footer> */}
+        <footer className="bg-muted text-muted-foreground py-6 absolute bottom-0 w-full">
+          <div className="container mx-auto flex items-center justify-between">
+            <p className="text-sm">&copy; 2024 FIRE Calculator. All rights reserved.</p>
+            <nav className="flex items-center gap-4">
+              <Link href="#" className="hover:underline text-sm" prefetch={false}>
+                Terms
+              </Link>
+              <Link href="#" className="hover:underline text-sm" prefetch={false}>
+                Privacy
+              </Link>
+            </nav>
+          </div>
+        </footer>
       </body>
     </html>
   );

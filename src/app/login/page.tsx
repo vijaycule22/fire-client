@@ -12,64 +12,7 @@ import { JSX, SVGProps } from "react"
 export default function Login() {
   return (
     <div className="flex flex-col min-h-screen">
-    <header className="flex items-center justify-between h-16 px-4 border-b bg-background md:px-6">
-      <Link href="#" className="flex items-center gap-2" prefetch={false}>
-        <MountainIcon className="h-6 w-6" />
-        <span className="sr-only">Acme Inc</span>
-      </Link>
-      <nav className="hidden gap-6 text-sm font-medium md:flex">
-        <DropdownMenu>
-          <DropdownMenuTrigger asChild>
-            <Button variant="ghost" className="flex items-center gap-1">
-              Services
-              <ChevronDownIcon className="h-4 w-4" />
-            </Button>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent align="end">
-            <DropdownMenuItem>Feature 1</DropdownMenuItem>
-            <DropdownMenuItem>Feature 2</DropdownMenuItem>
-            <DropdownMenuItem>Feature 3</DropdownMenuItem>
-          </DropdownMenuContent>
-        </DropdownMenu>
-        <Link href="#" className="text-muted-foreground py-2 px-3" prefetch={false}>
-          FAQ
-        </Link>
-        <div className="flex items-center gap-2">
-          <Button variant="outline">Sign In</Button>
-        </div>
-      </nav>
-      <Sheet>
-        <SheetTrigger asChild>
-          <Button size="icon" variant="outline" className="md:hidden">
-            <MenuIcon className="h-5 w-5" />
-            <span className="sr-only">Toggle menu</span>
-          </Button>
-        </SheetTrigger>
-        <SheetContent side="right" className="sm:max-w-xs">
-          <nav className="grid gap-4 p-4 text-sm font-medium">
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button variant="ghost" className="flex items-center justify-between">
-                  Services
-                  <ChevronRightIcon className="h-4 w-4" />
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="end">
-                <DropdownMenuItem>Feature 1</DropdownMenuItem>
-                <DropdownMenuItem>Feature 2</DropdownMenuItem>
-                <DropdownMenuItem>Feature 3</DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
-            <div className="flex items-center justify-between">
-              <Link href="#" className="text-muted-foreground" prefetch={false}>
-                FAQ
-              </Link>
-              <Button variant="outline">Sign In</Button>
-            </div>
-          </nav>
-        </SheetContent>
-      </Sheet>
-    </header>
+    
     <div className="flex flex-col items-center justify-center flex-1 bg-background">
       <div className="w-full max-w-md space-y-8">
         <Tabs defaultValue="login" className="w-full">
