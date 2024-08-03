@@ -22,9 +22,7 @@ export default function RootLayout({
         <Navbar />
         {children}
 
-        {/* <footer className="bg-muted text-muted-foreground py-4 px-6 text-center">
-            <p>&copy; 2024 FIRE Calculator. All rights reserved.</p>
-          </footer> */}
+
         <footer className="bg-muted text-muted-foreground py-6 absolute bottom-0 w-full">
           <div className="container mx-auto flex items-center justify-between">
             <p className="text-sm">&copy; 2024 FIRE Calculator. All rights reserved.</p>
