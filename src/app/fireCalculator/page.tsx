@@ -88,7 +88,7 @@ export default function Component() {
   return (
     <div className="flex flex-col min-h-dvh">
 
-      <main className="flex-1 py-12 md:py-20">
+      <main className="flex-1 py-12 md:py-20 mt-20">
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
           <div className="space-y-6">
             <h1 className="text-3xl md:text-4xl font-bold">Achieve Financial Independence, Retire Early</h1>

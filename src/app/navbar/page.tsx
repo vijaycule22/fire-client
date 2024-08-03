@@ -79,8 +79,10 @@ export default function Navbar() {
                             </Button>
                         </DropdownMenuTrigger>
                         <DropdownMenuContent align="end" className="bg-white border rounded-md p-1">
-                            <DropdownMenuItem className="text-muted-foreground py-1 px-2 text-sm">Feature 1</DropdownMenuItem>
-                            <DropdownMenuItem className="text-muted-foreground py-1 px-2 text-sm">Feature 2</DropdownMenuItem>
+                            <Link href="fireCalculator" className="hover:underline" prefetch={false}>
+                                <DropdownMenuItem className="text-muted-foreground py-1 px-2 text-sm">Fire Calculator</DropdownMenuItem>
+                            </Link>
+                            <DropdownMenuItem className="text-muted-foreground py-1 px-2 text-sm">SIP Calculator</DropdownMenuItem>
                             <DropdownMenuItem className="text-muted-foreground py-1 px-2 text-sm">Feature 3</DropdownMenuItem>
                         </DropdownMenuContent>
                     </DropdownMenu>
